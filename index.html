@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   <link href="css/styles.css" rel="stylesheet" type="text/css">
+   <script src="js/jquery-3.2.1.js"></script>
+   <script src="js/scripts.js"></script>
+    <title>Order Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order your pizza online!</h1>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Size</h2>
+          <form id="new-size">
+            <div class="form-group">
+              <label for="new-size-small">Big</label>
+              <input type="text" class="form-control" id="new-size-small">
+            </div>
+            <div class="form-group">
+              <label for="new-size-large">Small</label>
+              <input type="text" class="form-control" id="new-size-large">
+            </div>
+            <h2>Topping</h2>
+            <div id="new-toppinges">
+              <div class="new-topping">
+                <div class="form-group">
+                  <label for="new-cheese">cheese</label>
+                  <input type="text" class="form-control new-cheese">
+                </div>
+                <div class="form-group">
+                  <label for="new-pepperoni">pepperoni</label>
+                  <input type="text" class="form-control new-pepperoni">
+                </div>
+                <div class="form-group">
+                  <label for="new-artichoke">artichoke</label>
+                  <input type="text" class="form-control new-artichoke">
+                </div>
+                <div class="form-group">
+                  <label for="new-anchovy">anchovy</label>
+                  <input type="text" class="form-control new-anchovy">
+                </div>
+              </div>
+            </div>
+
+            <span class="btn btn-primary" id="new-topping">Another pizza</span>
+
+            <button type="submit" class="btn">Submit</button>
+          </form>
+
+          <h2>Your pizza:</h2>
+          <ul id="size">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <!-- <div id="show-size">
+            <h2></h2>
+            <p>Size: <span class="large-size"></span></p>
+            <p>Size: <span class="small-size"></span></p>
+            <p>Addresses:</p>
+            <ul id="toppings">
+
+            </ul> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
