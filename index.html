@@ -11,66 +11,35 @@
   <body>
     <div class="container">
       <h1>Order your pizza online!</h1>
+        <form id="orderPizza">
+          <p>Select your pizza size: </p>
+            <select class="form-control" id="size">
+              <option value="small">Small(10")</option>
+              <option value="medium">Medium(12")</option>
+              <option value="large">Large(14")</option>
+              <option value="extra">Extra Large(16")</option>
+            </select>
 
-      <div class="row">
-
-        <div class="col-md-6">
-          <h2>Size</h2>
-          <form id="new-size">
-            <div class="form-group">
-              <label for="new-size-small">Big</label>
-              <input type="text" class="form-control" id="new-size-small">
-            </div>
-            <div class="form-group">
-              <label for="new-size-large">Small</label>
-              <input type="text" class="form-control" id="new-size-large">
-            </div>
-            <h2>Topping</h2>
-            <div id="new-toppinges">
-              <div class="new-topping">
-                <div class="form-group">
-                  <label for="new-cheese">cheese</label>
-                  <input type="text" class="form-control new-cheese">
-                </div>
-                <div class="form-group">
-                  <label for="new-pepperoni">pepperoni</label>
-                  <input type="text" class="form-control new-pepperoni">
-                </div>
-                <div class="form-group">
-                  <label for="new-artichoke">artichoke</label>
-                  <input type="text" class="form-control new-artichoke">
-                </div>
-                <div class="form-group">
-                  <label for="new-anchovy">anchovy</label>
-                  <input type="text" class="form-control new-anchovy">
-                </div>
-              </div>
-            </div>
-
-            <span class="btn btn-primary" id="new-topping">Another pizza</span>
-
-            <button type="submit" class="btn">Submit</button>
-          </form>
-
-          <h2>Your pizza:</h2>
-          <ul id="size">
-
+          <div class="form-group" id="new-toppinges">                 <p>Select your pizza topping: </p>
+            <input type="checkbox" name="topping" id="new-cheese" value="cheese">Cheese<br>
+            <input type="checkbox" name="topping" id="new-pepperoni" value="pepperoni">Pepperoni<br>
+            <input type="checkbox" name="topping" id="new-artichoke" value="artichoke">Artichoke<br>
+            <input type="checkbox" name="topping" id="new-anchovy" value="anchovy"> Anchovy<br>
+          </div>
+          <button type="submit" class="btn">Place your order!</button>
+        </form>
+        <div id="pizza">
+          <h3>Your pizza: </h3>
+          <span id="size"></span>
+          <h3>With toppings: </h3>
+          <ul id="topping">
           </ul>
         </div>
+        <div id="price">
+          <h3>Your total is: </h3>
+          <span id="price"></span>
 
-        <div class="col-md-6">
-          <!-- <div id="show-size">
-            <h2></h2>
-            <p>Size: <span class="large-size"></span></p>
-            <p>Size: <span class="small-size"></span></p>
-            <p>Addresses:</p>
-            <ul id="toppings">
-
-            </ul> -->
-          </div>
         </div>
-
-      </div>
     </div>
   </body>
 </html>

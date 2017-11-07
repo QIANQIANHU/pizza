@@ -1,12 +1,3 @@
-/*#show-ticket {
+/*#pizza, #topping, #price {
   display: none;
 }*/
-
-.result {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.result:hover {
-  text-decoration: underline;
-}
