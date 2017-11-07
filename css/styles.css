@@ -1,3 +1,46 @@
 #words {
   display: none;
+  color: beige;
+}
+
+#size {
+color: grey;
+font-weight: lighter;
+}
+
+.form-group {
+  color: beige;
+  font-weight: lighter;
+}
+
+.boxmodel {
+  display: none;
+  border: 10px solid lightgrey;
+  padding: 4px;
+  margin: 4px;
+  background-color: white;
+}
+
+body {
+  background-image: url("pizza.jpg");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  margin-top:100px;
+  margin-right:70px;
+  margin-bottom:10px;
+  margin-left:70px;
+}
+
+h1 {
+  font-family: fantasy;
+  color: beige;
+  text-align: center;
+}
+
+h4{
+  color: darkgrey;
+}
+
+p {
+  color: beige;
 }
